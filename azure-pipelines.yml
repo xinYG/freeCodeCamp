@@ -15,9 +15,9 @@ steps:
     versionSpec: '10.x'
   displayName: 'Install Node.js'
 
-- script: |
-    npm install
-  displayName: 'npm install'
+# - script: |
+#     npm install
+#   displayName: 'npm install'
 
 - script: |
     curl -LJO https://unified-agent.s3.amazonaws.com/wss-unified-agent.jar
@@ -30,5 +30,5 @@ steps:
     WS_PRODUCTNAME: Cases
     WS_PROJECTNAME: 83077
     WS_GENERATESCANREPORT: True
-    WS_RESOLVELOCKFILE: False
+    WS_RESOLVELOCKFILE: True
   displayName: 'WhiteSource Unified Agent Scan'
