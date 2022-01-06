@@ -4,10 +4,6 @@
   "description": "The freeCodeCamp.org open-source codebase and curriculum",
   "license": "BSD-3-Clause",
   "private": true,
-  "engines": {
-    "node": ">=16",
-    "npm": ">=8"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/freeCodeCamp/freeCodeCamp.git"
