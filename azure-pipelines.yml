@@ -12,7 +12,7 @@ pool:
 steps:
 - task: NodeTool@0
   inputs:
-    versionSpec: '8.x'
+    versionSpec: '16.x'
     checkLatest: true
   displayName: 'Install Node.js'
 
@@ -24,6 +24,7 @@ steps:
     curl -LJO https://unified-agent.s3.amazonaws.com/wss-unified-agent.jar
     echo Unified Agent downloaded successfully
     java -jar wss-unified-agent.jar -loglevel debug
+    Move-Item -path "./Whitesource/*scan_report.json" -destination "./Whitesource/scan_report.json"
   env:
     WS_APIKEY: df61087c557647818cadf4be6d9df4ba53eec0a12e9341e58113ee3a10324bb8
     WS_USERKEY: dc6e6dc564c342119bf287b861750b206c3e1ed0e23e4b81a6dabb9c43450725
