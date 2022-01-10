@@ -33,4 +33,3 @@ steps:
     WS_PROJECTNAME: 83077
     WS_GENERATESCANREPORT: True
     WS_RESOLVELOCKFILE: False
-  displayName: 'WhiteSource Unified Agent Scan'
